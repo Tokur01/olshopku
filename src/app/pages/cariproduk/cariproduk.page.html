@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="def"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cari Produk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="product">
+    <div class="row">
+      <div class="col6" *ngFor="let p of produk" routerLink="/produks/{{p.id}}">
+        <div class="img" [ngStyle]="{'background-image':'url('+p.foto+')'}"></div>
+        <div class="prod-title">{{p.nama}}</div>
+        <div class="prod-harga">{{p.harga}}</div>
+        <div class="row">
+          <div class="prod-ulasan col8">{{p.ulasan}} ulasan</div>
+          <div class="prod-nilai col4"><ion-icon name="star"></ion-icon> {{p.nilai}}</div>
+        </div>
+        <div *ngIf="p.po > 0" class="prod-po">PRE ORDER</div>
+      </div>
+    </div>
+    <div class="kosong" *ngIf="produk.length == 0">
+      <b>Produk Kosong</b>
+      Tidak ditemukan produk untuk kata kunci <b>"{{cari}}"</b><br/>
+      Silahkan cari menggunakan kata kunci yang lain, atau hubungi admin melalui Live Chat untuk 
+      menanyakan informasi produk.
+    </div>
+  </div>
+</ion-content>

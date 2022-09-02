@@ -1,0 +1,49 @@
+<ion-content class="ion-padding">
+  <div class="logo">
+    <img src="/assets/logo.png" alt="logo" />
+  </div>
+  <div class="sign-wrap">
+    <div class="title font-mon-black text-primary">
+      MASUK
+    </div>
+    <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+      <!--
+      <ion-item>
+        <ion-label position="floating">Email/No Handphone</ion-label>
+        <ion-input ngModel type="email" name="email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input ngModel type="password" name="password"></ion-input>
+      </ion-item>
+    -->
+      <div class="row form-group">
+        <div class="col1 text-info">
+          <fa-icon [icon]="user"></fa-icon>
+        </div>
+        <div class="col11">
+          <input placeholder="email / no handphone" ngModel name="email" />
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col1 text-info">
+          <fa-icon [icon]="unlock"></fa-icon>
+        </div>
+        <div class="col11">
+          <input placeholder="password" type="password" ngModel name="password" />
+        </div>
+      </div>
+    
+      <div class="row mb40">
+        <div class="col6">
+          <ion-button type="submit" expand="full" class="btn-primary">Login</ion-button>
+        </div>
+        <div class="col6">
+          <ion-button expand="full" class="btn-warning" routerLink="/signup">Buat Akun</ion-button>
+        </div>
+      </div>
+      <p routerLink="/lupapassword" class="ion-text-center font-bold text-info">Lupa Password</p>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,529 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+    font-family: 'appdefault';
+    src: url('/assets/fonts/ProximaSoft-Regular.ttf');
+}
+@font-face {
+    font-family: 'appblack';
+    src: url('/assets/fonts/ProximaSoft-Black.ttf');
+}
+@font-face {
+    font-family: 'monblack';
+    src: url('/assets/fonts/Montserrat-Black.otf');
+}
+@font-face {
+    font-family: 'appbold';
+    src: url('/assets/fonts/ProximaSoft-Bold.ttf');
+}
+@font-face {
+    font-family: 'appmedium';
+    src: url('/assets/fonts/ProximaSoft-Medium.ttf');
+}
+*{
+    font-family: appdefault;
+}
+
+ion-button{
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 0px 12px #c4c5cc;
+  font-size: 110%;
+  height: auto;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+}
+ion-tab-bar ion-icon{
+  font-size: 250%;
+}
+
+.section{
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px #d3d4d8;
+  padding: 12px;
+}
+
+.div10{height:10px;}
+.div20{height:20px;}
+.div30{height:30px;}
+.div40{height:40px;}
+.mt10{ margin-top: 10px; }
+.mt20{ margin-top: 20px; }
+.mt30{ margin-top: 30px; }
+.mt40{ margin-top: 40px; }
+.mt50{ margin-top: 50px; }
+.mb10{ margin-bottom: 10px; }
+.mb20{ margin-bottom: 20px; }
+.mb30{ margin-bottom: 30px; }
+.mb40{ margin-bottom: 40px; }
+.mb50{ margin-bottom: 50px; }
+.right{ text-align: right;align-items: flex-end; }
+.left{ text-align: left; }
+.center{ text-align: center; }
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-bold{
+  font-family: appbold;
+}
+.font-black{
+  font-family: appblack;
+}
+.font-mon-black{
+  font-family: monblack;
+}
+
+.btn-primary{
+  --background: #2c3e50;
+}
+.tulbar{
+    background: #2c3e50;
+}
+.logo{
+    padding: 20px;
+    margin: 0 auto 0px auto;
+    width: 100%;
+    text-align: center;
+}
+.logo img{
+  max-width: 60%;
+  max-height: 40vw;
+}
+
+.col-warning{
+  color: #d35400;
+}
+
+/* MENU */
+.menuheader{
+  padding: 10px;
+  box-sizing: border-box;
+}
+.menuheader .col4{
+  text-align: right;
+}
+.menu-icon{
+  height: 24px;
+}
+.menutitle .nama{
+  font-weight: bold;
+}
+.menutitle .role{
+  font-size: 70%;
+  color: #bdc3c7;
+}
+.menuleft{
+  margin-top: 20px;
+}
+.menuleft .child{
+  border-left: 6px solid transparent;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+}
+.menuleft .child.active{
+  border-color: #27ae60;
+  background: #fff;
+}
+.menuleft .child .icon{
+  height: 20px;
+}
+
+.divider{
+  height: 20px;
+}
+
+/* FORM */
+.form-group{
+  border-radius: 8px;
+  padding: 8px 14px;
+  box-shadow: 0px 0px 12px #dcdde4;
+  background-color:#ffffff;
+  align-items: center;
+  justify-content: end;
+  margin: 16px auto;
+}
+.form-group input{
+  width: 100%;
+  border: none;
+  padding: 4px;
+  background-color:#ffffff;
+}
+.form-group input:focus{
+  outline: none;
+}
+
+/* BUTTON */
+.btn{
+    border: none;
+    box-shadow: 0px 0px 8px #bebcbc;
+}
+.btn-primary{
+    --background: linear-gradient( 109.5deg,  rgba(92,121,255,1) 11.2%, rgb(48, 213, 238) 91.1% ) !important;
+}
+.badge-primary, .bg-primary, .hov-primary:hover, .btn-primary:hover{
+    --background: linear-gradient( 109.5deg,  rgb(54, 77, 182) 11.2%, rgb(58, 196, 218) 91.1% ) !important;
+}
+a.text-primary:hover, .text-hov-primary:hover, .text-primary{
+    background-image: linear-gradient( 109.5deg,  rgb(54, 77, 182) 11.2%, rgb(58, 196, 218) 91.1% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:  rgba(92,121,255,1);
+}
+a.text-primary{
+    background-image: linear-gradient( 109.5deg,  rgba(92,121,255,1) 11.2%, rgb(48, 213, 238) 91.1% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    fill: currentColor;
+}
+.btn-success{
+    --background: linear-gradient( 90.9deg,  rgb(0, 153, 56) 0.5%, rgba(0,214,32,1) 99.7% ) !important;
+}
+.badge-success, .bg-success, .hov-success:hover, .btn-success:hover{
+    --background: linear-gradient( 90.9deg,  rgba(0,139,50,1) 0.5%, rgb(3, 187, 30) 99.7% ) !important;
+}
+a.text-success:hover, .text-hov-success:hover, .text-success{
+    background-image: linear-gradient( 90.9deg,  rgba(0,139,50,1) 0.5%, rgb(3, 187, 30) 99.7% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(0, 153, 56);
+}
+a.text-success{
+    background-image: linear-gradient( 90.9deg,  rgb(0, 153, 56) 0.5%, rgba(0,214,32,1) 99.7% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-danger{
+    --background: linear-gradient( 107.2deg,  rgba(150,15,15,1) 10.6%, rgba(247,0,0,1) 91.1% ) !important;
+}
+.badge-danger, .bg-danger, .hov-danger:hover, .btn-danger:hover{
+    --background: linear-gradient( 107.2deg,  rgb(110, 11, 11) 10.6%, rgb(180, 4, 4) 91.1% ) !important;
+}
+a.text-danger:hover, .text-hov-danger:hover, .text-danger{
+    background-image: linear-gradient( 107.2deg,  rgb(110, 11, 11) 10.6%, rgb(180, 4, 4) 91.1% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(180, 4, 4);
+}
+a.text-danger{
+    background-image: linear-gradient( 107.2deg,  rgba(150,15,15,1) 10.6%, rgba(247,0,0,1) 91.1% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-warning{
+    --background: linear-gradient( 88.7deg,  rgb(189, 123, 2) 10.6%, rgb(253, 178, 39) 90% ) !important;
+    color: #fff;
+}
+.badge-warning, .bg-warning, .hov-warning:hover, .btn-warning:hover{
+    --background: linear-gradient( 88.7deg,  rgb(211, 103, 3) 10.6%, rgb(219, 151, 25) 90% ) !important;
+    color: #fff;
+}
+a.text-warning:hover, .text-hov-warning:hover, .text-warning{
+    background-image: linear-gradient( 88.7deg,  rgb(211, 103, 3) 10.6%,  rgb(219, 151, 25) 90% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(219, 151, 25);
+}
+a.text-warning,.item-rating:hover{
+    background-image: linear-gradient( 88.7deg,  rgb(189, 123, 2) 10.6%, rgb(253, 178, 39) 90% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-info{
+    --background: linear-gradient( 91.9deg,   rgb(3, 200, 218) 0%, rgb(88, 235, 248) 90% ) !important;
+}
+.badge-info, .bg-info, .hov-info:hover, .btn-info:hover{
+    --background: linear-gradient( 91.9deg,  rgb(0, 150, 163) 0%, rgb(25, 201, 218) 90% ) !important;
+}
+a.text-info:hover, .text-hov-info:hover, .text-info{
+    background-image: linear-gradient( 91.9deg,  rgb(0, 150, 163) 0%, rgb(25, 201, 218) 90% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(3, 200, 218);
+}
+a.text-info{
+    background-image: linear-gradient( 91.9deg,   rgb(3, 200, 218) 0%, rgb(88, 235, 248) 90% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-medium{
+    --background: linear-gradient( 89.7deg,  rgb(177, 177, 177) -10.7%, rgb(217, 222, 226) 88.8% ) !important;
+}
+.badge-medium, .bg-medium, .hov-medium:hover, .btn-medium:hover{
+    --background: linear-gradient( 89.7deg,  rgb(128, 128, 128) -10.7%, rgb(181, 187, 192) 88.8% ) !important;
+}
+.text-medium{
+    background-image: linear-gradient( 89.7deg,  rgb(177, 177, 177) -10.7%, rgb(217, 222, 226) 88.8% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-dark{
+    background-image: linear-gradient( 89.7deg,  rgba(0,0,0,1) -10.7%, rgba(53,92,125,1) 88.8% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(53,92,125,1);
+}
+.text-dark2{
+    background-image: radial-gradient( circle 759px at 14% 22.3%,  rgba(10,64,88,1) 0%, rgba(15,164,102,1) 90% ) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hov-primary:hover, .hov-success:hover, .hov-warning:hover, .hov-danger:hover, .hov-info:hover{
+    color: #fff;
+}
+.bg-medium{
+    --background: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(161, 190, 253, 0.37) 0%, rgba(245,247,252,1) 100.2% ) !important;
+}
+.btn-rounded{
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+}
+
+/* PRODUK LISTING */
+.newproduct{
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 90%;
+  border-radius: 8px;
+  margin-bottom: 120px;
+}
+.newproduct .col6{
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.newproduct .prod-wrap{
+  box-shadow: 0px 0px 12px #dcdde4;
+  min-height: 240px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 12px;
+}
+.newproduct .prod-uls,
+.newproduct .prod-harga,
+.newproduct .prod-title{
+  padding: 0px 12px;
+}
+.newproduct .prod-space{
+  height: 12px;
+}
+.newproduct .img{
+  background-size: cover;
+  background-position: center center;
+  height: 30vw;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.newproduct .title{
+  font-family: "appblack";
+  color: #2c3e50;
+}
+.newproduct .title .line{
+  border-bottom: 3px solid #2c3e50;
+  width: 20%;
+  margin: 10px auto;
+}
+.newproduct .prod-title{
+  margin-top: 5px;
+  font-size: 90%;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+.newproduct .prod-harga{
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.newproduct .prod-harga i{
+  font-size: 90%;
+  color: #b40404;
+  text-decoration: line-through;
+}
+.newproduct .prod-po{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 8px;
+  border-radius: 8px;
+  background: #2c3e50;
+  color: #fff;
+  font-weight: bold;
+  font-size: 60%;
+}
+.newproduct .prod-nilai{
+  text-align: right;
+  align-items: center;
+}
+.newproduct .prod-ulasan{
+  color: #2c3e50;
+  font-size: 85%;
+}
+
+/* MAIN COLOR */
+ion-toolbar,
+ion-content{
+    --background: #f2f3f8;
+}
+
+
+/* COLOR MODIF */
+.color2{
+  color: #2c3e50;
+}
+
+.title{
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 120%;
+}
+
+/*.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+    display: inline-block;
+}*/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col12 {
+  -webkit-box-flex: 0;
+  width: 100%;
+  flex: 0 0 100%;
+}
+.col11 {
+  -webkit-box-flex: 0;
+  width: 91.66666667%;
+  flex: 0 0 91.66666667%;
+}
+.col10 {
+  -webkit-box-flex: 0;
+  width: 83.33333333%;
+  flex: 0 0 83.33333333%;
+}
+.col9 {
+  -webkit-box-flex: 0;
+  width: 75%;
+  flex: 0 0 75%;
+}
+.col8 {
+  -webkit-box-flex: 0;
+  width: 66.66666667%;
+  flex: 0 0 66.66666667%;
+}
+.col7 {
+  -webkit-box-flex: 0;
+  width: 58.33333333%;
+  flex: 0 0 58.33333333%;
+}
+.col6 {
+  -webkit-box-flex: 0;
+  width: 50%;
+  flex: 0 0 50%;
+}
+.col5 {
+  -webkit-box-flex: 0;
+  width: 41.66666667%;
+  flex: 0 0 41.66666667%;
+}
+.col4 {
+  -webkit-box-flex: 0;
+  width: 33.33333333%;
+  flex: 0 0 33.33333333%;
+}
+.col3 {
+  -webkit-box-flex: 0;
+  width: 25%;
+  flex: 0 0 25%;
+}
+.col2 {
+  -webkit-box-flex: 0;
+  width: 16.66666667%;
+  flex: 0 0 16.66666667%;
+}
+.col1 {
+  -webkit-box-flex: 0;
+  width: 8.33333333%;
+  flex: 0 0 8.33333333%;
+}
+
+/* SLIDER */
+.slider{
+  padding-bottom: 20px;
+  padding-top: 6px;
+}
+.slider ion-slide{
+  padding: 0 10px;
+}
+.slider .img{
+  border-radius: 6px;
+  width: 98%;
+  box-shadow: 0px 0px 5px #bdc3c7;
+}
+.slider .swiper-pagination{
+    bottom: -3px;
+    text-align: left;
+    padding-left: 20px;
+}
+.sliderfoto .swiper-pagination .swiper-pagination-bullet,
+.slider .swiper-pagination .swiper-pagination-bullet{
+    margin: 0 1px;
+    background: #000;
+}
+.sliderfoto .swiper-pagination .swiper-pagination-bullet-active,
+.slider .swiper-pagination .swiper-pagination-bullet-active{
+    background: #2c3e50;
+    padding-left: 20px;
+    border-radius: 20px;
+}

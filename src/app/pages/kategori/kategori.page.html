@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="def"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{kategori}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="newproduct">
+    <div class="row">
+      <div class="col6" *ngFor="let p of produk">
+        <div class="prod-wrap" routerLink="/produks/{{p.id}}">
+          <div class="img" [ngStyle]="{'background-image':'url('+p.foto+')'}"></div>
+          <div class="prod-title font-bold">{{p.nama}}</div>
+          <div class="prod-harga">
+            <i *ngIf="p.hargadiskon != null">{{p.hargadiskon}}&nbsp;</i><br/>
+            {{p.harga}}
+          </div>
+          <div class="row prod-uls">
+            <div class="prod-ulasan col8">{{p.ulasan}} ulasan</div>
+            <div class="prod-nilai col4 text-warning font-bold"><ion-icon name="star"></ion-icon> {{p.nilai}}</div>
+          </div>
+          <div *ngIf="p.po > 0" class="prod-po">PRE ORDER</div>
+        </div>
+      </div>
+    </div>
+    <div class="kosong" *ngIf="kosong">
+      Belum ada produk tersedia pada kategori {{kategori}}<br/>
+      Silahkan pilih produk di kategori yang lain, atau hubungi admin melalui Live Chat untuk 
+      menanyakan informasi produk.
+    </div>
+  </div>
+</ion-content>

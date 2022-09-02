@@ -1,0 +1,18 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="def"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Semua Kategori</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="row kategori mb40">
+    <div class="col3" *ngFor="let r of kategori" routerLink="/kategori/{{r.id}}">
+      <div class="foto" [ngStyle]="{'background-image':'url('+r.foto+')'}"></div>
+      <div class="cat-title">{{r.nama}}</div>
+    </div>
+  </div>
+</ion-content>

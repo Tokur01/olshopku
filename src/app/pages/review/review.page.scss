@@ -1,0 +1,42 @@
+.foto{
+    width: 25vw;
+    height: 25vw;
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 25vw;
+}
+.titel{
+    text-align: center;
+    width: 100%;
+    font-family: appmedium;
+}
+.tgl{
+    text-align: center;
+    font-size: 80%;
+}
+.nilai{
+    text-align: center;
+}
+.nilai .staroff,
+.nilai .staron{
+    font-size: 240%;
+    margin-right: 8px;
+}
+.nilai .staroff{
+    color: #afafaf;
+}
+.nilai .staron{
+    color: #f7b731;
+}
+.input{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #afafaf;
+}
+.section{
+    padding: 28px 24px;
+}
+.medium{
+    font-family: appmedium;
+}

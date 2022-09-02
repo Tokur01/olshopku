@@ -1,0 +1,27 @@
+ion-tab-bar{
+    border-radius: 12px;
+    bottom: 20px;
+    background-color: #529cb7;
+    border: none;
+    box-shadow: 0px 0px 12px #e0e4e6;
+}
+ion-tab-button{
+    padding: 4px 0;
+    background: transparent;
+    font-size: 70%;
+    color: #95e3ff;
+}
+ion-tab-button.tab-selected{
+    color: #ffffff;
+}
+fa-icon{
+    font-size: 16pt;
+}
+.tabed{
+    background: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+}
